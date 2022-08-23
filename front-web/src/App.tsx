@@ -1,14 +1,10 @@
 import './App.css';
-import Counter from './Counter';
-import Hello from './Hello';
+import Navbar from './NavBar';
+
 
 function App() {
-  return (
-    <div>
-      <Hello message='Eduardo'></Hello>
-      <Counter></Counter>
-    </div>
-  );
+  return <Navbar/>
+
 }
 
 export default App;
