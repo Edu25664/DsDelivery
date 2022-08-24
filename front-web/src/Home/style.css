@@ -32,9 +32,9 @@
 
 .home-btn-order {
   background-color: var(--primary-color);
-  border-radius: 10px;
-  height: 70px;
-  width: 235px;
+  border-radius: 8px;
+  height: 55px;
+  width: 230px;
   display: inline-block;
   display: flex;
   align-items: center;
