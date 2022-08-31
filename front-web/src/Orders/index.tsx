@@ -20,7 +20,7 @@ function Orders() {
   useEffect(() => {
     fechtProducts()
       .then((response) => setProduct(response.data))
-      .catch((erro) => toast.warning('Erro processar produtos'));
+      .catch((erro) => toast.warning('Produtos estão carregando!'));
   }, []);
 
   const handleSelectProduct = (product: Products) => {
