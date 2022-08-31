@@ -60,9 +60,10 @@ function OrderLocation({onChangeLocation} : Props) {
           </h3>
           <div className="filter-container">
           <Asyn
+            // @ts-ignore
+            loadOptions={loadOptions}
             placeholder="Digite um endereço para entregar o pedido"
             className="filter"
-            loadOptions={loadOptions}
             onChange={(value) => handleChangeSelect(value as Place)}
           />
           </div>
