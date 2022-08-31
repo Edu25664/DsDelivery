@@ -1,17 +1,14 @@
 import ProductCard from "./ProductCard";
-
-function ProductList() {
+import { Products } from "./types";
+type Props = {
+  product: Products[];
+};
+function ProductList({product} : Props) {
   return (
     <>
       <div className="orders-list-container">
         <div className="orders-list-items">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {product.map(product => (<ProductCard key={product.id} product ={product}/>))}
         </div>
       </div>
     </>
