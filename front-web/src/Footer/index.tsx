@@ -5,7 +5,7 @@ import {ReactComponent as Linkedin} from "./iconmonstr-linkedin-2.svg";
 function Footer() {
   return (
     <>
-      <footer className="main-footer">
+    <footer className="main-footer">
         <p>App desenvolvido por Eduardo Oliveira Ramos</p>
         <div className="footer-icons">
           <a href="https://github.com/Edu25664" target="_new">
