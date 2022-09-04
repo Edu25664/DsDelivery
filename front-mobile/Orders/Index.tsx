@@ -1,21 +1,30 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import Header from "../Header";
+import OrderCard from "../OrderCard/Index";
 function Orders() {
   return (
     <>
       <Header/>
-      <View>
-        <Text>Listagem de pedidos</Text>
-        <Text>Listagem de pedidos</Text>
-        <Text>Listagem de pedidos</Text>
-        <Text>Listagem de pedidos</Text>
-        <Text>Listagem de pedidos</Text>
-        <Text>Listagem de pedidos</Text>
-        <Text>Listagem de pedidos</Text>
-      </View>
+      <ScrollView style={styles.container}>
+       <OrderCard/>
+       <OrderCard/>
+       <OrderCard/>
+       <OrderCard/>
+       <OrderCard/>
+       <OrderCard/>
+       <OrderCard/>
+      </ScrollView>
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    paddingRight:'5%',
+    paddingLeft: '5%'
+  },
+})
+
 
 
 export default Orders;
