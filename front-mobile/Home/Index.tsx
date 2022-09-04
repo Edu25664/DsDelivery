@@ -1,14 +1,18 @@
+import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
+import Header from "../Header";
 
 function Home() {
-const HendleOnPress = () =>{
-
-}
-
+  const navigation = useNavigation();
+  const HendleOnPress = () => {
+    // @ts-ignore
+    navigation.navigate("Orders");
+  };
 
   return (
     <>
+    <Header/>
       <View style={styles.container}>
         <Image source={require("../assets/deliveryman.png")} />
         <Text style={styles.title}>
@@ -20,9 +24,9 @@ const HendleOnPress = () =>{
         </Text>
       </View>
       <View style={styles.footer}>
-       <RectButton style={styles.button} onPress={HendleOnPress}>
-        <Text style={styles.buttonText}>VER PEDIDOS</Text>
-       </RectButton>
+        <RectButton style={styles.button} onPress={HendleOnPress}>
+          <Text style={styles.buttonText}>VER PEDIDOS</Text>
+        </RectButton>
       </View>
     </>
   );
