@@ -95,9 +95,9 @@ public class Order implements Serializable {
 	}
 
 	public double getTotal() {
-    	double sum =0.0;
+    	double sum = 0.0;
     	for(Product p: products) {
-    		sum += sum + p.getPrice();
+    		sum += p.getPrice();
     	}
     	return sum;
     }
